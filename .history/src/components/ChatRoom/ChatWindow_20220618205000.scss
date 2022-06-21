@@ -1,0 +1,40 @@
+.ChatWindow__wrapper {
+    height: 100vh;
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    height: 56px;
+    padding: 0 16px;
+    align-items: center;
+    border-bottom: 1px solid rgb(230, 230, 230);
+
+    .header__info {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    .header__title {
+        margin: 0;
+        font-weight: bold;
+    }
+
+    .header__desc {
+        font-size: 12px;
+    }
+
+    .button_group {
+        display: flex;
+        align-items: center;
+    }
+}
+
+.Content {
+    height: calc(100% - 56px);
+    display: flex;
+    flex-direction: column;
+    padding: 11px;
+    justify-content: flex-end;
+}

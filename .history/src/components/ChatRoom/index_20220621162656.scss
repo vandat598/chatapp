@@ -1,0 +1,13 @@
+@media (max-width: 739px) {
+    .ant-col-6 {
+        max-width: 15%;
+
+        .sidebar {
+            // display: none;
+        }
+    }
+
+    .ant-col-18 {
+        max-width: 85%;
+    }
+}

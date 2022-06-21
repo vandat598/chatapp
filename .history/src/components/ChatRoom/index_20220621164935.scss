@@ -1,0 +1,37 @@
+@media (max-width: 739px) {
+    .ant-col-6 {
+        max-width: 11%;
+
+        .sidebar {
+            .ant-col-24 {
+                display: none;
+            }
+            .user_info {
+                display: block;
+                .ant-avatar {
+                    display: block;
+                    margin-left: -10px;
+                }
+                .ant-btn {
+                    display: none;
+                }
+                .username {
+                    display: none;
+                }
+            }
+
+            .mobile_menu {
+                display: block;
+                &:active {
+                    .ant-col-6 {
+                        max-width: 80%;
+                    }
+                }
+            }
+        }
+    }
+
+    .ant-col-18 {
+        max-width: 89%;
+    }
+}

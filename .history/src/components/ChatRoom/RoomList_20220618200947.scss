@@ -1,0 +1,25 @@
+.collapse__panel {
+    .ant-collapse-header,
+    span {
+        color: white;
+    }
+
+    .ant-collapse-content-box {
+        padding: 0 40px;
+
+        a {
+            display: block;
+            margin-bottom: 5px;
+            color: cyan;
+
+            &:hover {
+                color: rgb(14, 87, 87);
+            }
+        }
+    }
+
+    .add-room {
+        color: white;
+        padding: 0;
+    }
+}

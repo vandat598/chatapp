@@ -1,0 +1,27 @@
+.Message__wrapper {
+    margin-bottom: 10px;
+    background-color: cyan;
+
+    .message-item {
+    }
+
+    .author {
+        margin-left: 5px;
+        font-weight: bold;
+    }
+
+    .date {
+        margin-left: 10px;
+        font-size: 11px;
+        color: #a7a7a7;
+    }
+
+    .content {
+        margin-left: 30px;
+    }
+}
+
+.myMess {
+    display: flex;
+    justify-content: flex-end;
+}

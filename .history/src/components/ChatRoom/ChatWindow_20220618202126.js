@@ -1,0 +1,38 @@
+import { UserAddOutlined } from '@ant-design/icons';
+import { Button, Avatar, Tooltip } from 'antd';
+import { Fragment } from 'react';
+
+import './ChatWindow.scss';
+
+function ChatWindow() {
+    return (
+        <Fragment>
+            <div className="header">
+                <div className="header__info">
+                    <p className="header__title">Room 1</p>
+                    <span className="header_desc">Tám chuyện mỗi ngày 1</span>
+                </div>
+                <div>
+                    <Button icon={<UserAddOutlined />}>Mời</Button>
+                    <Avatar.Group size="small" maxCount={2}>
+                        <Tooltip title="A">
+                            <Avatar>A</Avatar>
+                        </Tooltip>
+                        <Tooltip title="A">
+                            <Avatar>B</Avatar>
+                        </Tooltip>
+                        <Tooltip title="A">
+                            <Avatar>C</Avatar>
+                        </Tooltip>
+                        <Tooltip title="A">
+                            <Avatar>D</Avatar>
+                        </Tooltip>
+                    </Avatar.Group>
+                </div>
+            </div>
+            <div className="Content"></div>
+        </Fragment>
+    );
+}
+
+export default ChatWindow;

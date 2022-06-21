@@ -1,0 +1,36 @@
+.Message__wrapper {
+    margin-bottom: 10px;
+    // box-shadow: inset ;
+
+    .author {
+        margin-left: 5px;
+        font-weight: bold;
+    }
+
+    .date {
+        margin-left: 10px;
+        font-size: 11px;
+        color: #a7a7a7;
+    }
+
+    .content {
+        margin-left: 30px;
+        min-width: 300px;
+        background-color: cadetblue;
+        padding: 3px 20px;
+        border-radius: 10px;
+    }
+
+    span {
+        word-break: keep-all;
+    }
+}
+
+.myMess {
+    display: flex;
+    justify-content: flex-end;
+
+    .content {
+        background-color: cyan;
+    }
+}
