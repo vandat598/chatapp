@@ -6,7 +6,7 @@ import RoomList from './RoomList.js';
 import './Sidebar.scss';
 
 function Sidebar(props) {
-    const { setIsOn, isOn } = props.value;
+    const { handleMobileMenu, setIsOn, isOn } = props.value;
 
     return (
         <div className="sidebar">
@@ -15,7 +15,7 @@ function Sidebar(props) {
                     <UserInfo />
                 </Col>
                 <Col span={24}>
-                    <RoomList value={{ setIsOn, isOn }} />
+                    <RoomList value={{ handleMobileMenu, setIsOn, isOn }} />
                 </Col>
                 <Button
                     ghost

@@ -1,0 +1,66 @@
+@media (max-width: 739px) {
+    .mobile__menu {
+        flex-flow: column wrap;
+    }
+
+    .ant-col-6 {
+        max-width: 12%;
+
+        .sidebar {
+            .ant-col-24 {
+                display: none;
+            }
+            .user_info {
+                display: block;
+                .ant-avatar {
+                    display: block;
+                    margin-left: -10px;
+                }
+                .ant-btn {
+                    display: none;
+                }
+                .username {
+                    display: none;
+                }
+            }
+
+            .btn_mobile_menu {
+                display: block;
+                width: 100vw;
+            }
+        }
+    }
+
+    .ant-col-18 {
+        max-width: 88%;
+        flex: content;
+    }
+
+    .col_sidebar {
+        max-width: 100%;
+        .sidebar {
+            .ant-col-24 {
+                display: block;
+            }
+            .user_info {
+                .ant-btn {
+                    display: block;
+                }
+                .username {
+                    display: block;
+                }
+            }
+        }
+    }
+
+    .Message__wrapper {
+        margin-right: 0;
+    }
+
+    .myMess {
+        margin-left: 0;
+    }
+    // .message-timechat-user {
+    //     float: right;
+    // }
+}

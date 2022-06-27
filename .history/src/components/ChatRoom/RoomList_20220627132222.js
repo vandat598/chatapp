@@ -7,12 +7,13 @@ import { AppContext } from '../../Context/AppProvider.js';
 
 function RoomList(props) {
     const { setIsOn, isOn } = props.value;
-    console.log(isOn);
+    console.log(props.value);
     const { rooms, setIsAddRoomVisible, setSelectedRoomId } =
         useContext(AppContext);
 
     const handleAddRoom = () => {
         setIsAddRoomVisible(true);
+        setIsOn(!isOn);
     };
 
     return (
@@ -27,7 +28,6 @@ function RoomList(props) {
                         key={room.id}
                         onClick={() => {
                             setSelectedRoomId(room.id);
-                            setIsOn(!isOn);
                         }}
                     >
                         {room.name}

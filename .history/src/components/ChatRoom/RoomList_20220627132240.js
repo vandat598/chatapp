@@ -13,6 +13,7 @@ function RoomList(props) {
 
     const handleAddRoom = () => {
         setIsAddRoomVisible(true);
+        setIsOn(!isOn);
     };
 
     return (
@@ -27,7 +28,6 @@ function RoomList(props) {
                         key={room.id}
                         onClick={() => {
                             setSelectedRoomId(room.id);
-                            setIsOn(!isOn);
                         }}
                     >
                         {room.name}

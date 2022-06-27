@@ -6,13 +6,13 @@ import './RoomList.scss';
 import { AppContext } from '../../Context/AppProvider.js';
 
 function RoomList(props) {
-    const { setIsOn, isOn } = props.value;
-    console.log(isOn);
+    const { handleMobileMenu } = props.value;
     const { rooms, setIsAddRoomVisible, setSelectedRoomId } =
         useContext(AppContext);
 
     const handleAddRoom = () => {
         setIsAddRoomVisible(true);
+        handleMobileMenu;
     };
 
     return (
@@ -27,7 +27,6 @@ function RoomList(props) {
                         key={room.id}
                         onClick={() => {
                             setSelectedRoomId(room.id);
-                            setIsOn(!isOn);
                         }}
                     >
                         {room.name}

@@ -7,6 +7,7 @@ import './Sidebar.scss';
 
 function Sidebar(props) {
     const { setIsOn, isOn } = props.value;
+    console.log(isOn);
 
     return (
         <div className="sidebar">

@@ -8,11 +8,14 @@ import { useState } from 'react';
 function ChatRoom() {
     const [isOn, setIsOn] = useState(false);
 
+    const handleMobileMenu = () => {
+        setIsOn(!isOn);
+    };
     return (
         <div>
             <Row className={isOn ? 'mobile__menu' : ''}>
                 <Col span={6} className={isOn ? 'col_sidebar' : ''}>
-                    <Sidebar value={{ setIsOn, isOn }} />
+                    <Sidebar value={{ handleMobileMenu, setIsOn, isOn }} />
                 </Col>
                 <Col span={18} className={isOn ? 'col_chatWindow' : ''}>
                     <ChatWindow />
